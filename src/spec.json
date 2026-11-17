@@ -1,0 +1,223 @@
+{
+  "title": "Gestione delle manutenzioni del verde",
+  "description": "Prototipo per registrare e monitorare le richieste di manutenzione del verde pubblico, con viste filtrabili per stato, priorità e quartiere.",
+  "accent": "emerald",
+  "pages": [
+    {
+      "id": "cruscotto",
+      "title": "Cruscotto",
+      "description": "Panoramica delle richieste e delle attività di manutenzione del verde.",
+      "metrics": [
+        {
+          "label": "Richieste aperte",
+          "value": "18"
+        },
+        {
+          "label": "Priorità alta",
+          "value": "4"
+        },
+        {
+          "label": "In lavorazione",
+          "value": "7"
+        },
+        {
+          "label": "Completate nel mese",
+          "value": "26"
+        }
+      ],
+      "columns": [
+        "Quartiere",
+        "Richieste aperte",
+        "Priorità alta",
+        "In lavorazione"
+      ],
+      "rows": [
+        [
+          "Lumo",
+          "5",
+          "1",
+          "2"
+        ],
+        [
+          "Vela",
+          "4",
+          "2",
+          "1"
+        ],
+        [
+          "Nubi",
+          "3",
+          "0",
+          "2"
+        ],
+        [
+          "Riva",
+          "6",
+          "1",
+          "2"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "richieste",
+      "title": "Richieste",
+      "description": "Elenco filtrabile delle segnalazioni di manutenzione, consultabile per quartiere, priorità e stato.",
+      "metrics": [
+        {
+          "label": "Richieste totali",
+          "value": "42"
+        },
+        {
+          "label": "Da assegnare",
+          "value": "6"
+        }
+      ],
+      "columns": [
+        "Codice",
+        "Area verde",
+        "Quartiere",
+        "Intervento richiesto",
+        "Priorità",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "RV-021",
+          "Giardino delle Lanterne",
+          "Lumo",
+          "Potatura alberi",
+          "Alta",
+          "Da assegnare"
+        ],
+        [
+          "RV-022",
+          "Parco delle Vele",
+          "Vela",
+          "Raccolta rami",
+          "Media",
+          "In lavorazione"
+        ],
+        [
+          "RV-023",
+          "Aiola delle Nuvole",
+          "Nubi",
+          "Sfalcio erba",
+          "Bassa",
+          "Completata"
+        ],
+        [
+          "RV-024",
+          "Viale dei Salici",
+          "Riva",
+          "Verifica irrigazione",
+          "Alta",
+          "In lavorazione"
+        ],
+        [
+          "RV-025",
+          "Giardino dei Sassi",
+          "Lumo",
+          "Rimozione vegetazione secca",
+          "Media",
+          "Da assegnare"
+        ],
+        [
+          "RV-026",
+          "Parco del Levante",
+          "Vela",
+          "Potatura siepi",
+          "Bassa",
+          "Completata"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "nuova-richiesta",
+      "title": "Nuova richiesta",
+      "description": "Registra una richiesta di manutenzione con area, quartiere, priorità e stato iniziale.",
+      "metrics": [],
+      "columns": [
+        "Codice",
+        "Area verde",
+        "Quartiere",
+        "Intervento richiesto",
+        "Priorità",
+        "Stato"
+      ],
+      "rows": [],
+      "form": [
+        "Codice",
+        "Area verde",
+        "Quartiere",
+        "Intervento richiesto",
+        "Priorità",
+        "Stato"
+      ]
+    },
+    {
+      "id": "attivita",
+      "title": "Attività",
+      "description": "Consulta le attività pianificate o concluse e filtra per quartiere, priorità e stato.",
+      "metrics": [
+        {
+          "label": "Attività pianificate",
+          "value": "11"
+        },
+        {
+          "label": "Interventi conclusi",
+          "value": "26"
+        }
+      ],
+      "columns": [
+        "Codice attività",
+        "Richiesta",
+        "Quartiere",
+        "Intervento",
+        "Priorità",
+        "Data prevista",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "AT-071",
+          "RV-022",
+          "Vela",
+          "Raccolta rami",
+          "Media",
+          "12/06/2026",
+          "In lavorazione"
+        ],
+        [
+          "AT-072",
+          "RV-024",
+          "Riva",
+          "Verifica irrigazione",
+          "Alta",
+          "13/06/2026",
+          "In lavorazione"
+        ],
+        [
+          "AT-073",
+          "RV-023",
+          "Nubi",
+          "Sfalcio erba",
+          "Bassa",
+          "10/06/2026",
+          "Completata"
+        ],
+        [
+          "AT-074",
+          "RV-025",
+          "Lumo",
+          "Rimozione vegetazione secca",
+          "Media",
+          "15/06/2026",
+          "Pianificata"
+        ]
+      ],
+      "form": []
+    }
+  ]
+}
